@@ -18,10 +18,10 @@
             </div>
             <div class="nav-middle flex-div">
                 <div class="search-box flex-div">
-                    <input type="text" placeholder="Holaaaaaa :D">
+                    <input type="text" placeholder="Holaaaaaa :D" id="search-input">
                     <img src="/IMG/search-solid.svg" alt="">
                 </div>
-            </div>
+                </div>
 
         </nav>
 
@@ -38,12 +38,28 @@
         </div>
 
     <!---Main--->
+    <ul id="box-search">
+        <li><a href="#">Ash</a></li>
+        <li><a href="#">Spider man</a></li>
+        <li><a href="#">Batman</a></li>
+        <li><a href="#">Breaking Bad</a></li>
+        <li><a href="#">El señor de los anillos</a></li>
+        <li><a href="#">Maestro</a></li>
+    </ul>
 
     <div class="container">
+        
+
 
         <div class="slider">
-            <div class="slide slide1"><a href="https://youtu.be/LEeGkcf_vuI">Slide 1</a></div>
-            <div class="slide slide2">Slide 2</div>
+            <div class="slide slide1"><a href="/MOVIES/Saltburn.html">
+                <H3>Saltburn: El Laberinto (2023)</H3>
+                <p>Un estudiante de la Universidad de Oxford se ve envuelto en el mundo de un compañero de clase encantador y aristocrático, que lo invita a la extensa finca de su excéntrica familia para pasar un verano inolvidable.</p>
+                <img src="https://m.media-amazon.com/images/M/MV5BZmE0MmE1ZjgtOGQ3OC00MzdjLTk4YWItOTVmY2Q3N2E4NzgxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1280_.jpg" alt=""></a></div>
+            <div class="slide slide2"><a href="/MOVIES/Maestro.html">
+                <H3>Maestro (2023)</H3>
+                <p>Sigue la compleja historia de amor de Leonard Bernstein y Felicia Montealegre; desde el momento en que se conocieron en 1946 en una fiesta, pasando por dos compromisos, un matrimonio de 25 años y tres hijos.</p>
+                <img src="https://m.media-amazon.com/images/M/MV5BY2QzZjM4ODQtYjk5My00NWY5LThmNTctZjczMzUzYzhlZjBiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1280_.jpg" alt=""></a></div>
             <div class="slide slide3">Slide 3</div>
             <div class="slide slide4">Slide 4</div>
             <div class="slide slide5">Slide 5</div>
@@ -56,93 +72,105 @@
            <div class="arrow arrow-left">&#10094;</div>
            <div class="arrow arrow-right">&#10095;</div>
 
-        <div class="tab-container">
+        <div class="tab-container-movies">
             <ul class="options">
-            <li id="option1" class="option option-active">Peliculas</li>
-            <li id="option2" class="option option">Option 2</li>
-            <li id="option3" class="option option">Option 3</li>
+            <li id="option1" class="option option-active">Series y Peliculas</li>
+            <li id="option2" class="option option">Peliculas</li>
+            <li id="option3" class="option option">Series</li>
+            <li id="option4" class="option option">Animes</li>
         </ul>
             <div class="contents">
                 <div id="content1" class="content content-active">
                 <ul>
-                    <div class="list-container">
-                        <div class="vid-list">
-                            <a href="/MOVIES/Maestro.html"><img src="https://m.media-amazon.com/images/M/MV5BZjQ4YjdmMjYtZDM1Ny00M2I2LTliMGMtNzUyODk4ZmRmYmQzXkEyXkFqcGdeQXVyMzUxNTM4ODc@._V1_FMjpg_UX768_.jpg" class="thumbnail" alt="">
-                            </a>
-                                <div class="flex-div">
-                                <div class="vid-info">
-                                    <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><b>Saltburn: El Laberinto</b></a>
-                                </div>
-                                </div>
-                                
-                                
-                        </div>
-            
-                        <div class="vid-list">
-                            <a href="/MOVIES/It_is_a_Wonderful_Life.html"><img src="https://m.media-amazon.com/images/M/MV5BNDBmMmI4ZDktNWQyMi00N2VmLWJkMWItMmU5N2M0MGRmOTIzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_FMjpg_UX799_.jpg" class="thumbnail" alt="">
-                            </a>
-                                <div class="flex-div">
-                                <div class="vid-info">
-                                    <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><b>¡Qué bello es vivir!</b></a>
-                                </div>
-                                </div>
-                                
-                                
-                        </div>
-            
-                        <div class="vid-list">
-                            <a href="/SERIES/Breaking_Bad.html"><img src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UY720_.jpg" class="thumbnail" alt="">
-                            </a>
-                                <div class="flex-div">
-                                <div class="vid-info">
-                                    <a href="/SERIES/Breaking_Bad.html"><b>Breaking Bad</b></a>
-                                </div>
-                                </div>
-                                
-                                
-                        </div>
-            
-                        <div class="vid-list">
-                            <a href="/MOVIES/Saltburn.html"><img src="https://m.media-amazon.com/images/M/MV5BM2NmMDQ1ZWEtNDU4OS00MGIxLWEyMGMtMTM2YmFkYzNhYmMxXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UY720_.jpg" class="thumbnail" alt="">
-                            </a>
-                                <div class="flex-div">
-                                <div class="vid-info">
-                                    <a href="/MOVIES/Saltburn.html"><b>Saltburn: El Laberinto</b></a>
-                                </div>
-                                </div>
-                                
-                                
-                        </div>
-            
-                        <div class="vid-list">
-                            <a href="/MOVIES/The_Fellowship_of_the_Ring.html">
-                                <img src="https://s0.smartresize.com/wallpaper/1005/397/HD-wallpaper-movie-the-lord-of-the-rings-the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" class="thumbnail" alt="">
-                            </a>
-                            <div class="flex-div">
-                                <a href="https://m.media-amazon.com/images/M/MV5BMzgyNjdjOWMtMjAyYy00NzQ4LWIwYTQtZDk2ZDQzYWVlN2IwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_QL75_UY562_CR6,0,380,562_.jpg">
-                                </a>
-                                <div class="vid-info">
-                                    <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><b>El señor de los anillos: La comunidad del anillo</b></a>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
                 </ul>
                 </div>    
-                <div id="content2" class="content">
-                </div>
-                <div id="content3" class="content">
-                    <h3>Option3</h3>
-                    <p>Lorem ipsumajfkm, dolor sit amet consectetur adipisicing elit. Tenetur delectus quaerat omnis! Sunt fugiat autem mollitia, animi esse corrupti laborum sed. Reprehenderit ex deserunt sint.</p>
-                </div>
-                <div id="content4" class="content">
-                    <h3>Option1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur delectus quaerat omnis! Sunt fugiat autem mollitia, animi esse corrupti laborum sed. Reprehenderit ex deserunt sint.</p>
-                </div>
             </div>
         </div>
 
+        <div class="div-filter-buttos">
+           <button class="boton-filtro">INICIO</button>       
+           <button class="boton-clase" data-clase="azul">PELICULAS</button>
+           <button class="boton-clase" data-clase="rojo">SERIES</button>
+           <button class="boton-clase" data-clase="verde">ANIMES</button>
+        </div>
+            
+        <!-- AZUL=PELICULAS ROJO=SERIES VERDE=ANIMES  -->
+
+            <div class="contenedor">
+                <div class="azul">
+                    <div class="list-container">
+                        <div class="vid-list">
+                         <a href="/MOVIES/Maestro.html"><img src="https://m.media-amazon.com/images/M/MV5BOGI2MzQ1NzQtMmVkOC00ZGI0LWI3YjQtN2FjMzQ1NmRhNzFhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UY2048_.jpg" class="thumbnail" alt=""></a>
+                         <div class="flex-div">
+                            <div class="vid-info">
+                                <a href="/MOVIES/Maestro.html"><b>Maestro</b></a>
+                            </div>
+                        </div>
+                            
+                            
+                         </div>
+                         <div class="vid-list">
+                        <a href="/MOVIES/It_is_a_Wonderful_Life.html"><img src="https://m.media-amazon.com/images/M/MV5BNDBmMmI4ZDktNWQyMi00N2VmLWJkMWItMmU5N2M0MGRmOTIzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_FMjpg_UX799_.jpg" class="thumbnail" alt="">
+                        </a>
+                            <div class="flex-div">
+                            <div class="vid-info">
+                                <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><b>¡Qué bello es vivir!</b></a>
+                            </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="vid-list">
+                        <a href="/MOVIES/Saltburn.html"><img src="https://m.media-amazon.com/images/M/MV5BM2NmMDQ1ZWEtNDU4OS00MGIxLWEyMGMtMTM2YmFkYzNhYmMxXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UY720_.jpg" class="thumbnail" alt="">
+                        </a>
+                            <div class="flex-div">
+                            <div class="vid-info">
+                                <a href="/MOVIES/Saltburn.html"><b>Saltburn: El Laberinto</b></a>
+                            </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="vid-list">
+                        <a href="/MOVIES/The_Fellowship_of_the_Ring.html">
+                            <img src="https://s0.smartresize.com/wallpaper/1005/397/HD-wallpaper-movie-the-lord-of-the-rings-the-lord-of-the-rings-the-fellowship-of-the-ring.jpg" class="thumbnail" alt="">
+                        </a>
+                        <div class="flex-div">
+                            <a href="https://m.media-amazon.com/images/M/MV5BMzgyNjdjOWMtMjAyYy00NzQ4LWIwYTQtZDk2ZDQzYWVlN2IwXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_QL75_UY562_CR6,0,380,562_.jpg">
+                            </a>
+                            <div class="vid-info">
+                                <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><b>El señor de los anillos: La comunidad del anillo</b></a>
+                            </div>
+                        </div>
+ 
+                        </div>
+                        
+                </div>
+                </div>
+                <div class="rojo">
+                    <div class="list-container">
+                        <div class="vid-list">
+                        <a href="/SERIES/Breaking_Bad.html"><img src="https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UY720_.jpg" class="thumbnail" alt="">
+                        </a>
+                            <div class="flex-div">
+                            <div class="vid-info">
+                                <a href="/SERIES/Breaking_Bad.html"><b>Breaking Bad</b></a>
+                            </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="verde">Verde</div>
+
+           </div>
+
+
+
+           
+           
         <script src="/script.js"></script>
     </div>
     </body>
