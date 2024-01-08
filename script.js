@@ -66,3 +66,37 @@ option3.addEventListener('click', ()=> {
 })
 
 
+let slideIndex = 1;
+let slideTimeout;
+
+const showSlides = () => {
+ clearTimeout(slideTimeout);
+ document.querySelectorAll('.slide').forEach(slide => {
+    slide.style.display = 'none';
+ });
+ document.querySelector('.slide' + slideIndex).style.display = 'block';
+ slideTimeout = setTimeout(showNextSlide, 4000);
+};
+
+const showNextSlide = () => {
+ if (slideIndex < 10) {
+    slideIndex++;
+ } else {
+    slideIndex = 1;
+ }
+ showSlides();
+};
+
+const showPrevSlide = () => {
+ if (slideIndex > 1) {
+    slideIndex--;
+ } else {
+    slideIndex = 10;
+ }
+ showSlides();
+};
+
+document.querySelector('.arrow-left').addEventListener('click', showPrevSlide);
+document.querySelector('.arrow-right').addEventListener('click', showNextSlide);
+
+showSlides();
