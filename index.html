@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Batmovies</title>
+        <title>Batmovies🦇Películas y Series En Español Latino</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://kit.fontawesome.com/a9c72f49a2.js" crossorigin="anonymous"></script>
@@ -18,37 +18,104 @@
             </div>
             <div class="nav-middle flex-div">
                 <div class="search-box flex-div">
-                    <input type="text" placeholder="Holaaaaaa :D" id="search-input">
-                    <img src="/IMG/search-solid.svg" alt="">
+                    <input type="text" id="search" placeholder="Buscar..." autocomplete="off" onfocus="showSearchBox()" onblur="hideSearchBox()" onkeydown="checkEscapeKey(event)">
                 </div>
                 </div>
-
         </nav>
+        <!-- BUSCADOR-SCRIPT -->
+        <script>
+            function search() {
+                const searchTerm = document.getElementById('search').value.toLowerCase();
+                const listItems = document.getElementsByTagName('li');
+                let count = 0;
+        
+                for (let i = 0; i < listItems.length; i++) {
+                    const listItem = listItems[i];
+                    const text = listItem.textContent.toLowerCase();
+        
+                    if (text.indexOf(searchTerm) !== -1) {
+                        listItem.style.display = '';
+                        count++;
+                        if (count >= 5) {
+                            break;
+                        }
+                    } else {
+                        listItem.style.display = 'none';
+                    }
+                }
+            }
+        
+            document.addEventListener('DOMContentLoaded', function() {
+                search();
+            });
+        
+            document.getElementById('search').addEventListener('input', search);
+        
+            function showSearchBox() {
+                var searchBox = document.getElementById("list");
+                searchBox.style.display = "block";
+            }
+            window.addEventListener('DOMContentLoaded', function() {
+    search();
+    document.getElementById('search').addEventListener('input', search);
+});
+
+function search() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const listItems = document.getElementsByTagName('li');
+    let count = 0;
+
+    for (let i = 0; i < listItems.length; i++) {
+        const listItem = listItems[i];
+        const text = listItem.textContent.toLowerCase();
+
+        if (text.indexOf(searchTerm) !== -1) {
+            listItem.style.display = '';
+            count++;
+            if (count >= 5) {
+                break;
+            }
+        } else {
+            listItem.style.display = 'none';
+        }
+    }
+}
+
+// Controla si se hizo clic fuera del input
+window.addEventListener('click', function(event) {
+    var searchBox = document.getElementById("list");
+
+    // Verifica si el elemento clickeado es el input o si es un elemento secundario del input
+    if (event.target !== document.getElementById('search') && !document.getElementById('search').contains(event.target)) {
+        searchBox.style.display = "none";
+    }
+});
+
+        </script>
 
         <!--SIDEBAR--->
         <div class="sidebar">
             <div class="shortcut-links">
                 <a href="/index.html" ><img src="/IMG/house-solid.svg" alt=""><p>Inicio</p></a>
-                <a href=""><img src="/IMG/play.svg" alt="" ><p>Peliculas</p></a>
-                <a href=""><img src="/IMG/video-solid.svg" alt="" ><p>Series</p></a>
+                <a href="/Peliculas.html"><img src="/IMG/play.svg" alt="" ><p>Peliculas</p></a>
+                <a href="/Series.html"><img src="/IMG/video-solid.svg" alt="" ><p>Series</p></a>
                 <a href=""><img src="/IMG/video-solid.svg" alt="" ><p>Anime</p></a>
-                <a href=""><img src="/IMG/bars-solid.svg" alt="" ><p>Generos</p></a>
-                <a href=""><img src="/IMG/calendar-solid.svg" alt="" ><p>Fecha</p></a>
             </div>
         </div>
+        <!-- BUSCADOR -->
+        <ul id="list">
+            <a href="/MOVIES/Maestro.html"><li>Maestro</li></a>
+            <a href="/MOVIES/It_is_a_Wonderful_Life.html"><li>¡Que bello es vivir!</li></a>
+            <a href="/MOVIES/Saltburn.html"><li>Saltburn: El Laberinto</li></a>
+            <a href="/SERIES/Breaking_Bad.html"><li>Breaking Bad</li></a>
+            <a href="/MOVIES/The_Fellowship_of_the_Ring.html"><li>El señor de los anillo: La comunidad del anillo</li></a>
+        </ul> 
 
     <!---Main--->
-    <ul id="box-search">
-        <li><a href="#">Ash</a></li>
-        <li><a href="#">Spider man</a></li>
-        <li><a href="#">Batman</a></li>
-        <li><a href="#">Breaking Bad</a></li>
-        <li><a href="#">El señor de los anillos</a></li>
-        <li><a href="#">Maestro</a></li>
-    </ul>
+
 
     <div class="container">
-        
+
 
 
         <div class="slider">
@@ -98,7 +165,7 @@
         <!-- AZUL=PELICULAS ROJO=SERIES VERDE=ANIMES  -->
 
             <div class="contenedor">
-                <div class="azul">
+                <div class="azul">  
                     <div class="list-container">
                         <div class="vid-list">
                          <a href="/MOVIES/Maestro.html"><img src="https://m.media-amazon.com/images/M/MV5BOGI2MzQ1NzQtMmVkOC00ZGI0LWI3YjQtN2FjMzQ1NmRhNzFhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UY2048_.jpg" class="thumbnail" alt=""></a>
@@ -145,8 +212,7 @@
                         </div>
  
                         </div>
-                        
-                </div>
+                    </div>
                 </div>
                 <div class="rojo">
                     <div class="list-container">
@@ -164,6 +230,7 @@
                     </div>
                 </div>
                 <div class="verde">Verde</div>
+                <div class="2023">mora</div>
 
            </div>
 

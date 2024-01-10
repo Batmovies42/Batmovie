@@ -148,15 +148,22 @@ document.querySelector('.boton-filtro').addEventListener('click', function() {
    }
 
 
-// BUSCADOR
-document.addEventListener("keyup", e=> {
+   function buscador_interno(){
+    filter = inputSearch.value.toUpperCase();
+    li = box_search.getElementsByTagName("li");
 
-  if (e.target.matches("#buscador")){
-    document.querySelectorAll('#articulo').forEach(fruta => {
-      fruta.textContent.toLocaleLowerCase().includes(e.target.value)
-    ? fruta.classList.remove('filtro')
-    : fruta.classList.add('filtro');
-    })
-  }
-})
-
+    // recorriendo elementos a filtrar mediante los li
+    for (i = 0; i < li.length; i++){
+       a = li [i].getElementsByTagName("a")[0];
+       if (!a) {
+           console.error('No se encuentra el elemento <a> dentro del elemento <li>');
+           continue;
+       }
+       textvalue = a.textContent || a.innerText;
+       if(textvalue.toUpperCase().indexOf(filter) > -1){
+         li[i].style.display = "";
+       }else{
+         li[i].style.display = "none";
+       }
+    }
+}

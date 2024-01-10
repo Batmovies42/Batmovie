@@ -61,13 +61,17 @@ nav {
     margin-right: 15px;
     padding: 8px 12px;
     border-radius: 25px;
+    left: 50%;
+    transform: translatex(-55%);
+    
 }
 .nav-middle .search-box input {
-    width: 800px;
+    width: 500px;
     border: 0;
     outline: 0;
     background: transparent;
     color: #fff;
+
 }
 .nav-middle .search-box img{
    width: 15px;
@@ -795,7 +799,7 @@ background: transparent;
  width: 50px;
  height: 50px;
  position: absolute;
- top: 290px;
+ top: 310px;
  font-size: 2em;
  color: #fff;
  cursor: pointer;
@@ -829,7 +833,7 @@ background: transparent;
 }
 
 .borde-rojo {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #2b06ff;
    }
 .azul {
     color: #0000ff;
@@ -841,32 +845,32 @@ background: transparent;
     color: green;
 }
 
-
-
-#box-search li {
-    background: #380f0f;
-
-
-}
-
-#box-search {
+#list{
+    list-style: none;
+    z-index: 11;
     position: fixed;
-    width: 835px;
-    z-index: 10;
-    background: #380f0f;
-    left: 425px;
-    overflow: hidden;
     top: 60px;
-    display: none;
-}
-
-#box-search a{
-    display: block;
-    width: 835px;
+    width: 500px;
     color: #fff;
-    padding: 12px 20px;
+    left: 670px;
+    transform: translatex(-41.5%);
+    height: 120px;
+    overflow: auto;
+    background: transparent;
+    display: none;
+    border-radius: 5px;
 }
 
-#box-search li a:hover{
-    background: #a5a5a5;
+#list::-webkit-scrollbar {
+    width: 6px;
+    padding: 0;
+}
+#list::-webkit-scrollbar-thumb {
+    background: #2b06ff;
+    border-radius: 5px;
+}
+
+#list li {
+    padding: 10px;
+    background: #000000;
 }
