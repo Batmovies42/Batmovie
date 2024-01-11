@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'poppins' , sans-serif;
     box-sizing: border-box;
-    background: #000;        
     }
 
 a {
@@ -828,6 +827,7 @@ background: transparent;
     border-left: #000;
     border-right: #000;
     color: #fff;
+    background: #000;
     font-size: 15px;
     font-weight: bold;
 }
@@ -847,14 +847,14 @@ background: transparent;
 
 #list{
     list-style: none;
-    z-index: 11;
+    z-index: 12;
     position: fixed;
     top: 60px;
-    width: 500px;
+    width: 520px;
     color: #fff;
     left: 670px;
-    transform: translatex(-41.5%);
-    height: 120px;
+    transform: translatex(-41%);
+    height: 114px;
     overflow: auto;
     background: transparent;
     display: none;
@@ -873,4 +873,17 @@ background: transparent;
 #list li {
     padding: 10px;
     background: #000000;
+}
+
+#list li:hover {
+    background: #242424;
+}
+
+.buscador-iframe iframe {
+    width: 80%;
+    margin: auto;
+    position: fixed;
+    z-index: 11;
+    top: 10px;
+    left: 10%
 }

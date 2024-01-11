@@ -12,13 +12,7 @@
         <div class="nav-left flex-div">
             <a href="/index.html"><img src="/IMG/BATMOVIES-removebg-preview.png" alt="" class="logo"></a>
         </div>
-        <div class="nav-middle flex-div">
-            <div class="search-box flex-div">
-                <input type="text" placeholder="Holaaaaaa :D">
-                <img src="/IMG/search-solid.svg" alt="">
-            </div>
-        </div>
-
+    <?php require('./LAYOUT/browser.php')?>
     </nav>
 
     <div class="container play-container">
