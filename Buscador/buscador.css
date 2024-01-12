@@ -10,6 +10,8 @@ body {
     background: none;
 }
 
+
+
 a {
     text-decoration: none;
     color: #fff;
@@ -70,4 +72,13 @@ background: transparent;
 
 #list li:hover {
     background: #242424;
+}
+
+@media (max-width: 375px) {
+    .nav-middle .search-box input {
+        font-size: 10px;
+    }
+    #list {
+        font-size: 10px;
+    }
 }

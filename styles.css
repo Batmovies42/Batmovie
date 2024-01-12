@@ -4,7 +4,9 @@
     font-family: 'poppins' , sans-serif;
     box-sizing: border-box;
     }
-
+.serie-bodie {
+    background: #000;
+}
 a {
     text-decoration: none;
     color: #a5a5a5;
@@ -22,7 +24,6 @@ img {
 nav {
     padding: 10px 2%;
     justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background: #000;
     position: sticky;
     top: 0;
@@ -35,7 +36,8 @@ nav {
     
 }
 .logo {
-    height: 65px;
+    width: 65px;
+    height: 100%;
 }
 
 
@@ -55,27 +57,8 @@ nav {
     margin-right: 25px;
     filter: brightness(800%) sepia(100%) hue-rotate(180deg);
 }
-.nav-middle .search-box {
-    border: 1px solid #333;
-    margin-right: 15px;
-    padding: 8px 12px;
-    border-radius: 25px;
-    left: 50%;
-    transform: translatex(-55%);
-    
-}
-.nav-middle .search-box input {
-    width: 500px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: #fff;
 
-}
-.nav-middle .search-box img{
-   width: 15px;
-   filter: brightness(800%) sepia(100%) hue-rotate(180deg);    
-}
+
 
 /*<---slidebar--->*/
 .sidebar {
@@ -163,7 +146,7 @@ nav {
     background: #060606;
     padding-left: 17%;
     padding-right: 2%;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 .large-container {
@@ -239,32 +222,7 @@ nav {
     float: left;
 }
 
-@media (max-width: 900px){
-    .bars{
-        display: none;
-    }
-    .sidebar {
-        display: none;
-    }
 
-    .container, .large-container{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .nav-right .subir, .mas, .noti{
-        display: none;
-    }
-    .nav-middle .search-box input {
-        width: 200px;
-    }
-    .nav-right .user-icon {
-      width: 55px;
-      height: 55px;
-    }
-    .logo{
-        width: 65px;
-    }
-} 
 
 /*-------PLAY VIDEO PAGE------*/
 
@@ -274,8 +232,8 @@ nav {
 
 .row {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    padding-left: 7%;
 }
 
 .play-video{
@@ -288,7 +246,6 @@ nav {
 }
 
 .play-video {
-    width: 100%;
 }
 
 .side-video-list {
@@ -317,6 +274,7 @@ nav {
 }
 .play-video h3 {
     margin-top: 15px;
+    font-size: 15px;
 }
 .play-video, .Serie-info h3{
     font-weight: 600;
@@ -518,27 +476,30 @@ nav {
 
 }
 
+
+
+
 /* SERIE_INTERFAZ */
 
 .Serie-info img {
-    width: 160px;
+    width: 19%;
     border-radius: 5px;
 }
 
 .Serie-info {
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     background: #333;
-    padding: 50px 0;
+    padding: 10px 5px;
     border-radius: 5px;
+    height: 1%;
+    justify-content: space-between;
 }
 
 .Serie-info img {
-    margin-left: 50px;
-    width: 200px;
-    height: auto;
+    width: 19%;
+    height: 100%;
 }
 
 .sinopsis b {
@@ -547,7 +508,7 @@ nav {
 }
 
 .sinopsis {
-    margin-left: 50px;
+    width: 39%;
     background: transparent;
 }
 
@@ -556,11 +517,12 @@ nav {
 }
 
 .sinopsis-overflow {
-    width: 400px;
+    width: 100%;
     justify-content: center;
     background: transparent;
-    margin-top: 20px;
     margin-right: 20px;
+    overflow: auto;
+    overflow-x: hidden;
     }
 
 .sinopsis-overflow::-webkit-scrollbar {
@@ -656,9 +618,7 @@ nav {
 }
 
 .traileri {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
+    width: 39%;
 }
 
 .episode-info {
@@ -692,32 +652,33 @@ nav {
 .sinopsis-episode {
     width: 500px;
     color: #fff;
-    margin-right: 25000px;
     background: transparent;
 }
 
 .sinopsis-episode {
-    margin-left: 50px;
     background: transparent;
+    font-size: 25px;
 }
 
-.sinopsis-episode h3, p, b{
+.sinopsis-episode > h3, p, b{
     background: transparent;
+    font-size: 15px;
 }
 
 .manage-episodes ul {
     display: flex;
     list-style: none;
-}
+    justify-content: space-between;
+    }
 
 .manage-episodes {
-    width: 500px;
+    width: 50%;
+    font-size: 25px;
     margin: auto;
-    color: #fff;
-    background: transparent;
     text-align: center;
-    transition: .1s;
 }
+    
+
 
 .manage-episodes ul li:hover {
     background-color: #da4040;
@@ -741,6 +702,8 @@ nav {
     border-radius: 5px;
     
 }
+
+
 
 .slider {
  width: 100%;
@@ -814,20 +777,23 @@ background: transparent;
 
 
 .div-filter-buttos {
+    width: 100%;
     margin-top: 10px;
-    width: 300px;
-    justify-content: space-between;
     display: flex;
+    padding: 10px;
+    background: #000;
+
 }
 
 .div-filter-buttos button {
-    padding: 20px;
+    width: 25%;
+    margin-top: 10px;
     cursor: pointer;
     border-top: #000;
     border-left: #000;
     border-right: #000;
+    background: #000;   
     color: #fff;
-    background: #000;
     font-size: 15px;
     font-weight: bold;
 }
@@ -880,10 +846,758 @@ background: transparent;
 }
 
 .buscador-iframe iframe {
+    width: 65%;
+    position: fixed;
+    z-index: 11;
+    left: 17.5%;
+    top: 15px;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 9px;
+    padding: 0;
+    background: #000;
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#0000ff, #da4040);
+    border-radius: 5px;
+}
+
+.mobile-nav {
+    width: 100%;
+}
+.mobile-nav div{
+    display: none;
+    justify-content: space-between;
+} 
+
+.mobile-nav div a {
+    align-items: center;
+    text-align: center;
+
+}
+
+.mobile-nav div img {
+justify-content: center;}
+
+@media (max-width: 900px){
+
+
+    .container, .large-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .nav-right .subir, .mas, .noti{
+        display: none;
+    }
+
+    .nav-right .user-icon {
+      width: 55px;
+      height: 55px;
+    }
+    .logo{
+        width: 65px;
+    }
+    .bars{
+        display: flex;
+    }
+    .sidebar {
+        display: flex;
+        font-size: 13px;
+    }
+} 
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .sidebar {
+        width: 7%;
+        font-size: 8px;
+    }
+
+    .shortcut-links {
+        width: 1px;
+    }
+    .div-filter-buttos {
+        width: 100%;
+    }
+    .div-filter-buttos button {
+        width: 25%;
+        cursor: pointer;
+        border-top: #000;
+        border-left: #000;
+        border-right: #000;
+        color: #fff;
+        background: #000;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+
+    }
+    .buscador-iframe iframe {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 11;
+    margin-top: 100px;
+    left: 10%;
+    height: 97px;
+}
+.slider {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+   }
+.slider img {
+    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+    object-fit: cover;
+}
+.slide h3 {
+    font-size: 13px;
+    margin-left: 12%;
+    margin-top: 19.4%;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    background: #00000085;
+
+}
+.slide p {
+    width: 75%;
+    padding: 5px;
+    color: #cfcfcf;
+    margin-left: 12%;
+    margin-top: 24%;
+    position: absolute;
+    background: #0000004f;
+    font-size: 12px;
+}
+.arrow {
+    background: transparent;
+     width: 35px;
+     height: 50px;
+     position: absolute;
+     top: 190px;
+     font-size: 1.3em;
+     color: #fff;
+     cursor: pointer;
+     margin-left: 200px;
+    }   
+    .arrow-left {
+     margin-left: 100px;
+    }
+    .arrow-right {
+     margin-right: 115px;
+    
+    }  
+    .container {
+        padding-left: 7%;
+    } 
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 30px;
+        margin-top: 15px;
+        background: #000;
+
+    }
+    .vid-info a{
+        color: #fff;
+        font-weight: 800;
+        display: block;
+
+        font-size: 13px;
+    }
+    .contenedor .vid-list img{
+        width: 50%;
+        height: 271px;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .row {
+        padding-left: 0%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    body {
+        overflow-x: hidden;
+    }
+    .bars{
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .div-filter-buttos {
+        width: 100%;
+    }
+    .div-filter-buttos button {
+        width: 25%;
+        cursor: pointer;
+        border-top: #000;
+        border-left: #000;
+        border-right: #000;
+        color: #fff;
+        background: #000;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .logo {
+        width: 32px;
+        height: 32px;
+
+    }
+    .buscador-iframe iframe {
     width: 80%;
     margin: auto;
     position: fixed;
     z-index: 11;
-    top: 10px;
-    left: 10%
+    top: 1.5%;
+    left: 10%;
+    height: 97px;
 }
+.slider {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+   }
+.slider img {
+    width: 100%;
+    margin: auto;
+}
+.slide h3 {
+    font-size: 12px;
+    margin-left: 5%;
+    margin-top: 27.4%;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    background: #00000085;
+
+}
+.slide p {
+    width: 90%;
+    padding: 5px;
+    color: #cfcfcf;
+    margin-left: 5%;
+    margin-top: 32%;
+    position: absolute;
+    background: #0000004f;
+    font-size: 10px;
+}
+.arrow {
+    background: transparent;
+     width: 35px;
+     height: 50px;
+     position: absolute;
+     top: 160px;
+     font-size: 1em;
+     color: #fff;
+     cursor: pointer;
+     margin-left: 200px;
+    }   
+    .arrow-left {
+     margin-left: 0px;
+    }
+    .arrow-right {
+     margin-right: 0px;
+    
+    }     
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 30px;
+        margin-top: 15px;
+        background: #000;
+
+    }
+    .vid-info a{
+        color: #fff;
+        font-weight: 800;
+        display: block;
+        font-size: 1em;
+    }
+    .contenedor .vid-list img{
+        width: 50%;
+        height: 271px;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .mobile-nav {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .mobile-nav div{
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    .mobile-nav div a {
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    
+    }
+
+    .row {
+        padding-left: 0%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+    
+    .sinopsis h3 {
+        font-size: 8px;
+    }
+
+    .sinopsis b {
+        font-size: 5px;
+    }
+
+    .sinopsis {
+        width: 70%;
+        background: transparent;
+        font-size: 8px;
+        margin: 0;
+        height: 70px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .traileri {
+       display: none;
+    }
+    .option-active {
+        border-bottom: 2px solid #2b06ff   
+    }
+    .option {
+        flex-grow: 1;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .content {
+        font-size: 12px;
+        width: 80%;
+        height: 100%;
+        color: #fff;
+        padding: 0px;
+margin: auto;    }
+    
+.manage-episodes {
+    width: 100%;
+    font-size: 8px;
+    margin: auto;
+    text-align: center;
+    justify-content: s;
+}
+
+.sinopsis-episode, p{
+    background: transparent;
+    font-size: 9px;
+}
+
+.sinopsis b{
+    background: transparent;
+    font-size: 10px;
+}
+}
+@media (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
+    .div-filter-buttos {
+        width: 100%;
+    }
+    .div-filter-buttos button {
+        width: 25%;
+        cursor: pointer;
+        border-top: #000;
+        border-left: #000;
+        border-right: #000;
+        color: #fff;
+        background: #000;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .logo {
+        width: 32px;
+        height: 32px;
+
+    }
+    .buscador-iframe iframe {
+    width: 80%;
+    margin: auto;
+    position: fixed;
+    z-index: 11;
+    top: 1.5%;
+    left: 10%;
+    height: 97px;
+}
+.slider {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+   }
+.slider img {
+    width: 100%;
+    margin: auto;
+}
+.slide h3 {
+    font-size: 9px;
+    margin-left: 5%;
+    margin-top: 30%;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    background: #00000085;
+
+}
+.slide p {
+    width: 80%;
+    padding: 5px;
+    color: #cfcfcf;
+    margin-left: 5%;
+    margin-top: 35%;
+    position: absolute;
+    background: #0000004f;
+    font-size: 8px;
+}
+.arrow {
+    background: transparent;
+     width: 35px;
+     height: 50px;
+     position: absolute;
+     top: 160px;
+     font-size: 1em;
+     color: #fff;
+     cursor: pointer;
+     margin-left: 200px;
+    }   
+    .arrow-left {
+     margin-left: 0px;
+    }
+    .arrow-right {
+     margin-right: 0px;
+    
+    }   
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 30px;
+        margin-top: 15px;
+        background: #000;
+
+    }
+    .vid-info a{
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        font-size: 12px;
+    }
+    .contenedor .vid-list img{
+        width: 50%;
+        height: 271px;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .mobile-nav {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .mobile-nav div{
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    .mobile-nav div a {
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    
+    }
+    .row {
+        padding-left: 0%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+    
+    .sinopsis h3 {
+        font-size: 8px;
+    }
+
+    .sinopsis b {
+        font-size: 5px;
+    }
+
+    .sinopsis {
+        width: 70%;
+        background: transparent;
+        font-size: 8px;
+        margin: 0;
+        height: 70px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .traileri {
+       display: none;
+    }
+    .option-active {
+        border-bottom: 2px solid #2b06ff   
+    }
+    .option {
+        flex-grow: 1;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .content {
+        font-size: 12px;
+        width: 80%;
+        height: 100%;
+        color: #fff;
+        padding: 0px;
+margin: auto;    }
+    
+.manage-episodes {
+    width: 100%;
+    font-size: 8px;
+    margin: auto;
+    text-align: center;
+    justify-content: s;
+}
+
+.sinopsis-episode, p{
+    background: transparent;
+    font-size: 9px;
+}
+
+.sinopsis b{
+    background: transparent;
+    font-size: 10px;
+}
+}
+@media (max-width: 320px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+    .bars{
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .div-filter-buttos {
+        width: 100%;
+    }
+    .div-filter-buttos button {
+        width: 25%;
+        cursor: pointer;
+        border-top: #000;
+        border-left: #000;
+        border-right: #000;
+        color: #fff;
+        background: #000;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .logo {
+        width: 32px;
+        height: 32px;
+
+    }
+    .buscador-iframe iframe {
+    width: 80%;
+    margin: auto;
+    position: fixed;
+    z-index: 11;
+    top: 1.5%;
+    left: 10%;
+    height: 100px;
+}
+.slider {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+   }
+.slider img {
+    width: 100%;
+    margin: auto;
+}
+.slide h3 {
+    font-size: 9px;
+    margin-left: 5%;
+    margin-top: 30%;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    background: #00000085;
+
+}
+.slide p {
+    width: 80%;
+    padding: 5px;
+    color: #cfcfcf;
+    margin-left: 5%;
+    margin-top: 35%;
+    position: absolute;
+    background: #0000004f;
+    font-size: 8px;
+}
+.arrow {
+    background: transparent;
+     width: 35px;
+     height: 50px;
+     position: absolute;
+     top: 160px;
+     font-size: 1em;
+     color: #fff;
+     cursor: pointer;
+     margin-left: 200px;
+    }   
+    .arrow-left {
+     margin-left: 0px;
+    }
+    .arrow-right {
+     margin-right: 0px;
+    
+    }   
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 30px;
+        margin-top: 15px;
+        background: #000;
+
+    }
+    .vid-info a{
+        color: #fff;
+        font-weight: 600;
+        display: block;
+        font-size: 11px;
+    }
+    .contenedor .vid-list img{
+        width: 50%;
+        height: 271px;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .mobile-nav {
+        padding: 20px 0;
+        width: 100%;
+    }
+    .mobile-nav div{
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    .mobile-nav div a {
+        align-items: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .row {
+        padding-left: 0%;
+    }
+    .play-video iframe {
+        width: 100%;
+    }
+    
+    .sinopsis h3 {
+        font-size: 8px;
+    }
+
+    .sinopsis b {
+        font-size: 5px;
+    }
+
+    .sinopsis {
+        width: 70%;
+        background: transparent;
+        font-size: 8px;
+        margin: 0;
+        height: 70px;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    .traileri {
+       display: none;
+    }
+    .option-active {
+        border-bottom: 2px solid #2b06ff   
+    }
+    .option {
+        flex-grow: 1;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .content {
+        font-size: 12px;
+        width: 80%;
+        height: 100%;
+        color: #fff;
+        padding: 0px;
+margin: auto;    }
+    
+.manage-episodes {
+    width: 100%;
+    font-size: 8px;
+    margin: auto;
+    text-align: center;
+    justify-content: s;
+}
+
+.sinopsis-episode, p{
+    background: transparent;
+    font-size: 9px;
+}
+
+.sinopsis b{
+    background: transparent;
+    font-size: 10px;
+}
+
+}
+
+

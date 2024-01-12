@@ -20,84 +20,15 @@
 
 
 
-        
+                        <div class="nav-middle">
+                            <div class="buscador-iframe">
+                                <iframe src="/Buscador/buscador.html" frameborder="0"></iframe>
+                               </div>
+                        </div>
 
         </nav>
-        <div class="nav-middle flex-div">
-            <div class="buscador-iframe">
-                <iframe src="/Buscador/buscador.html" frameborder="0"></iframe>
-               </div>
-            </div>
-        <!-- BUSCADOR-SCRIPT -->
-        <script>
-            function search() {
-                const searchTerm = document.getElementById('search').value.toLowerCase();
-                const listItems = document.getElementsByTagName('li');
-                let count = 0;
-        
-                for (let i = 0; i < listItems.length; i++) {
-                    const listItem = listItems[i];
-                    const text = listItem.textContent.toLowerCase();
-        
-                    if (text.indexOf(searchTerm) !== -1) {
-                        listItem.style.display = '';
-                        count++;
-                        if (count >= 5) {
-                            break;
-                        }
-                    } else {
-                        listItem.style.display = 'none';
-                    }
-                }
-            }
-        
-            document.addEventListener('DOMContentLoaded', function() {
-                search();
-            });
-        
-            document.getElementById('search').addEventListener('input', search);
-        
-            function showSearchBox() {
-                var searchBox = document.getElementById("list");
-                searchBox.style.display = "block";
-            }
-            window.addEventListener('DOMContentLoaded', function() {
-    search();
-    document.getElementById('search').addEventListener('input', search);
-});
 
-function search() {
-    const searchTerm = document.getElementById('search').value.toLowerCase();
-    const listItems = document.getElementsByTagName('li');
-    let count = 0;
 
-    for (let i = 0; i < listItems.length; i++) {
-        const listItem = listItems[i];
-        const text = listItem.textContent.toLowerCase();
-
-        if (text.indexOf(searchTerm) !== -1) {
-            listItem.style.display = '';
-            count++;
-            if (count >= 5) {
-                break;
-            }
-        } else {
-            listItem.style.display = 'none';
-        }
-    }
-}
-
-// Controla si se hizo clic fuera del input
-window.addEventListener('click', function(event) {
-    var searchBox = document.getElementById("list");
-
-    // Verifica si el elemento clickeado es el input o si es un elemento secundario del input
-    if (event.target !== document.getElementById('search') && !document.getElementById('search').contains(event.target)) {
-        searchBox.style.display = "none";
-    }
-});
-
-        </script>
 
         <!--SIDEBAR--->
         <div class="sidebar">
@@ -116,7 +47,7 @@ window.addEventListener('click', function(event) {
     <div class="container">
 
 
-
+   
         <div class="slider">
             <div class="slide slide1"><a href="/MOVIES/Saltburn.html">
                 <H3>Saltburn: El Laberinto (2023)</H3>
@@ -153,14 +84,13 @@ window.addEventListener('click', function(event) {
                 </div>    
             </div>
         </div>
-
         <div class="div-filter-buttos">
            <button class="boton-filtro">INICIO</button>       
            <button class="boton-clase" data-clase="azul">PELICULAS</button>
            <button class="boton-clase" data-clase="rojo">SERIES</button>
            <button class="boton-clase" data-clase="verde">ANIMES</button>
         </div>
-            
+        
         <!-- AZUL=PELICULAS ROJO=SERIES VERDE=ANIMES  -->
 
             <div class="contenedor">
@@ -177,7 +107,7 @@ window.addEventListener('click', function(event) {
                             
                          </div>
                          <div class="vid-list">
-                        <a href="/MOVIES/It_is_a_Wonderful_Life.php"><img src="https://m.media-amazon.com/images/M/MV5BNDBmMmI4ZDktNWQyMi00N2VmLWJkMWItMmU5N2M0MGRmOTIzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_FMjpg_UX799_.jpg" class="thumbnail" alt="">
+                        <a href="/MOVIES/It_is_a_Wonderful_Life.html"><img src="https://m.media-amazon.com/images/M/MV5BNDBmMmI4ZDktNWQyMi00N2VmLWJkMWItMmU5N2M0MGRmOTIzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_FMjpg_UX799_.jpg" class="thumbnail" alt="">
                         </a>
                             <div class="flex-div">
                             <div class="vid-info">
@@ -211,6 +141,8 @@ window.addEventListener('click', function(event) {
                         </div>
  
                         </div>
+                  
+                  
                     </div>
                 </div>
                 <div class="rojo">
@@ -233,7 +165,14 @@ window.addEventListener('click', function(event) {
 
            </div>
 
-
+           <div class="mobile-nav">
+            <div class="">
+                <div><a href="/index.html" ><p>INICIO</p></a></div>
+                <div><a href="/Peliculas.html"><p>PELICULAS</p></a></div>
+                <div><a href="/Series.html"><p>SERIES</p></a></div>
+                <div><a href=""><p>ANIME</p></a></div>
+            </div>
+        </div>
 
         <script src="/script.js"></script>
     </div>
