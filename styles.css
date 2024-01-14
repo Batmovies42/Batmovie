@@ -608,6 +608,10 @@ nav {
     list-style: none;
     text-align: center;
 }
+#content3 ul{
+    list-style: none;
+    text-align: center;
+}
 
 #content1 ul li {
     padding: 10px 0px;
@@ -627,6 +631,22 @@ nav {
     color: #000;
 }
 #content2 ul li:hover {
+    background-color: #da4040;
+    color: #000;
+}
+
+#content3 ul li {
+    padding: 10px 0px;
+    margin: 10px;
+    border: 1px solid #da4040;
+    border-radius: 10px;
+}
+
+#content3 ul li:hover {
+    background-color: #da4040;
+    color: #000;
+}
+#content3 ul li:hover {
     background-color: #da4040;
     color: #000;
 }
