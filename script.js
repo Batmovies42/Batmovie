@@ -48,6 +48,14 @@ const changeOption = () => {
         option3.classList.value = 'option',
         content3.classList.value = 'content'
     )
+    chose == 4 ? (
+        option4.classList.value = 'option option-active',
+        content4.classList.value = 'content content-active'
+    )
+    : (
+        option4.classList.value = 'option',
+        content4.classList.value = 'content'
+    )
 }
 
 option1.addEventListener('click', ()=> {
@@ -62,6 +70,10 @@ option2.addEventListener('click', ()=> {
 
 option3.addEventListener('click', ()=> {
     chose = 3
+    changeOption()
+})
+option4.addEventListener('click', ()=> {
+    chose = 4
     changeOption()
 })
 
