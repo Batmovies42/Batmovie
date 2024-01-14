@@ -604,6 +604,10 @@ nav {
     list-style: none;
     text-align: center;
 }
+#content2 ul{
+    list-style: none;
+    text-align: center;
+}
 
 #content1 ul li {
     padding: 10px 0px;
@@ -611,8 +615,18 @@ nav {
     border: 1px solid #da4040;
     border-radius: 10px;
 }
+#content2 ul li {
+    padding: 10px 0px;
+    margin: 10px;
+    border: 1px solid #da4040;
+    border-radius: 10px;
+}
 
 #content1 ul li:hover {
+    background-color: #da4040;
+    color: #000;
+}
+#content2 ul li:hover {
     background-color: #da4040;
     color: #000;
 }
