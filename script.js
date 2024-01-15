@@ -23,8 +23,8 @@ let chose = 1
 
 const changeOption = () => {
     chose == 1 ? (
-        option1.classList.value = 'option option-active-ind',
-        content1.classList.value = 'content content-active-ind'
+        option1.classList.value = 'option option-active',
+        content1.classList.value = 'content content-active'
     )
     : (
         option1.classList.value = 'option',
