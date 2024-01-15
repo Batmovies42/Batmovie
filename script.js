@@ -23,8 +23,8 @@ let chose = 1
 
 const changeOption = () => {
     chose == 1 ? (
-        option1.classList.value = 'option option-active',
-        content1.classList.value = 'content content-active'
+        option1.classList.value = 'option option-active-ind',
+        content1.classList.value = 'content content-active-ind'
     )
     : (
         option1.classList.value = 'option',
@@ -89,44 +89,6 @@ option5.addEventListener('click', ()=> {
     changeOption()
 })
 
-
-
-
-
-let slideIndex = 1;
-let slideTimeout;
-
-const showSlides = () => {
- clearTimeout(slideTimeout);
- document.querySelectorAll('.slide').forEach(slide => {
-    slide.style.display = 'none';
- });
- document.querySelector('.slide' + slideIndex).style.display = 'block';
- slideTimeout = setTimeout(showNextSlide, 7000);
-};
-
-const showNextSlide = () => {
- if (slideIndex < 10) {
-    slideIndex++;
- } else {
-    slideIndex = 1;
- }
- showSlides();
-};
-
-const showPrevSlide = () => {
- if (slideIndex > 1) {
-    slideIndex--;
- } else {
-    slideIndex = 10;
- }
- showSlides();
-};
-
-document.querySelector('.arrow-left').addEventListener('click', showPrevSlide);
-document.querySelector('.arrow-right').addEventListener('click', showNextSlide);
-
-showSlides();
 
 
 
