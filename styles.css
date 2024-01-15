@@ -616,6 +616,10 @@ nav {
     list-style: none;
     text-align: center;
 }
+#content5 ul{
+    list-style: none;
+    text-align: center;
+}
 
 #content1 ul li {
     padding: 10px 0px;
@@ -641,6 +645,12 @@ nav {
     border: 1px solid #da4040;
     border-radius: 10px;
 }
+#content5 ul li {
+    padding: 10px 0px;
+    margin: 10px;
+    border: 1px solid #da4040;
+    border-radius: 10px;
+}
 
 #content1 ul li:hover {
     background-color: #da4040;
@@ -650,7 +660,6 @@ nav {
     background-color: #da4040;
     color: #000;
 }
-
 #content3 ul li {
     padding: 10px 0px;
     margin: 10px;
@@ -678,6 +687,21 @@ nav {
     color: #000;
 }
 #content4 ul li:hover {
+    background-color: #da4040;
+    color: #000;
+}
+#content5 ul li {
+    padding: 10px 0px;
+    margin: 10px;
+    border: 1px solid #da4040;
+    border-radius: 10px;
+}
+
+#content5 ul li:hover {
+    background-color: #da4040;
+    color: #000;
+}
+#content5 ul li:hover {
     background-color: #da4040;
     color: #000;
 }
