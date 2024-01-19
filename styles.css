@@ -839,8 +839,6 @@ nav {
     margin-left: 5%;
     border-radius: 5px;
 }
-.slide6 { background: magenta; }
-.slide7 { background: orange; }
 .slide8 { background: purple; }
 .slide9 { background: brown; }
 .slide10 { background: black; }
@@ -1690,3 +1688,34 @@ margin: auto;    }
 }
 
 
+.download-movie-torrent {
+    color: #fff;
+    background-color: #281cd6b2;
+    justify-content: space-between;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    transition: .3s;
+    margin-bottom: 50px;
+}
+
+.download-movie-torrent:hover {
+    background-color: #aa60ff;
+    color: #ffffff;
+}
+
+.download-movie-torrent ul {
+    list-style: none;
+    display: flex;
+}
+
+.download-movie-torrent img{
+    width: 40px;
+}
+
+.download-movie-torrent span {
+    font-weight: bold;
+    font-size: 15px;
+}

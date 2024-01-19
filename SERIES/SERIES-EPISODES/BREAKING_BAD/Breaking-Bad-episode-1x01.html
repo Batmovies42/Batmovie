@@ -71,6 +71,28 @@
                               // Focus on the popup window
                             }
                           }
+
+                          
+                          window.onload = function() {
+ document.body.focus();
+};
+document.body.onkeydown = function(e) {
+ e = e || window.event;
+
+ if (e.altKey && e.keyCode === 37) {
+    openPopup();
+ }
+ if (e.altKey && e.keyCode === 37) {
+    openPopup();
+ }
+};
+
+function openPopup() {
+ popupWindow = window.open('https://animatedjumpydisappointing.com/vqau7u12?key=b686b82b804c904abf1349254ecc7830', 'nombre_de_la_ventana', 'width=00,height=300');
+}
+                          
+
+
                         </script>    
 
   
