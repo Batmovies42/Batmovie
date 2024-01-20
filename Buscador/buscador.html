@@ -19,6 +19,11 @@
         </div>
 
 <ul id="list">
+    <a target="_parent" href="/MOVIES/Napoleon.html"><li>Napoleón</li></a>
+    <a target="_parent" href="/MOVIES/Top-Gun-Maverick.html"><li>Top Gun Maverick</li></a>
+    <a target="_parent" href="/MOVIES/Rebel-Moon-Parte-1-La-niña-del-fuego.html"><li>Rebel Moon (Parte uno) La niña del fuego</li></a>
+    <a target="_parent" href="/MOVIES/Parasitos.html"><li>Parásitos</li></a>
+    <a target="_parent" href="/SERIES/Band-of-Brothers.html"><li>Hermanos De Sangre</li></a>
     <a target="_parent" href="/MOVIES/Los-asesinos-de-la-luna.html"><li>Los Asesinos De La Luna</li></a>
     <a target="_parent" href="/MOVIES/Spider-Man-A-través-del-Spider-Verso-2023.html"><li>Spider-Man- A través del Spider-Verso</li></a>
     <a target="_parent" href="/MOVIES/Los-Que-Se-Quedan.html"><li>Los Que Se Quedan</li></a>
@@ -37,7 +42,7 @@
     </ul> 
 </nav>
 <!-- BUSCADOR-SCRIPT -->
-<script>
+<!-- <script>
     function search() {
         const searchTerm = document.getElementById('search').value.toLowerCase();
         const listItems = document.getElementsByTagName('li');
@@ -105,9 +110,67 @@ searchBox.style.display = "none";
 }
 });
 
-</script>
+</script> -->
 
 
+<script>
+    function removeAccents(str) {
+      return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+  
+    function search() {
+      const searchTerm = removeAccents(
+        document.getElementById("search").value.toLowerCase()
+      );
+      const listItems = document.getElementsByTagName("li");
+      let count = 0;
+  
+      for (let i = 0; i < listItems.length; i++) {
+        const listItem = listItems[i];
+        const text = removeAccents(listItem.textContent.toLowerCase());
+  
+        if (text.indexOf(searchTerm) !== -1) {
+          listItem.style.display = "";
+          count++;
+          if (count >= 5) {
+            break;
+          }
+        } else {
+          listItem.style.display = "none";
+        }
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      search();
+    });
+  
+    document.getElementById("search").addEventListener("input", search);
+  
+    function showSearchBox() {
+      var searchBox = document.getElementById("list");
+      searchBox.style.display = "block";
+    }
+  
+    window.addEventListener("DOMContentLoaded", function () {
+      search();
+      document.getElementById("search").addEventListener("input", search);
+    });
+  
+    // Controla si se hizo clic fuera del input
+    addEventListener("click", function (event) {
+      var searchBox = document.getElementById("list");
+  
+      // Verifica si el elemento clickeado es el input o si es un elemento secundario del input
+      if (
+        event.target !== document.getElementById("search") &&
+        !document.getElementById("search").contains(event.target)
+      ) {
+        searchBox.style.display = "none";
+      }
+    });
+  </script>
+  
 
 </body>
 </html>
