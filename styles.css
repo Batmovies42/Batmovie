@@ -1714,7 +1714,14 @@
         width: 40px;
     }
 
+<<<<<<< HEAD
     .download-movie-torrent span {
         font-weight: bold;
         font-size: 15px;
     }
+=======
+.download-movie-torrent span {
+    font-weight: bold;
+    font-size: 15px;
+}
+>>>>>>> e599921de2425f7894d85ed9a07694e753f3627a
