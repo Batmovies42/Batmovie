@@ -1685,38 +1685,80 @@
     }
 
 
-    .download-movie-torrent {
-        color: #fff;
-        background-color: #281cd6b2;
-        justify-content: space-between;
-        padding: 10px;
-        width: 50%;
-        margin: auto;
-        text-align: center;
-        border-radius: 25px;
-        transition: .3s;
-        margin-bottom: 50px;
-    }
+.download-movie-torrent {
+    width: 40%;
+    margin: auto;
+}
 
-    .download-movie-torrent:hover {
-        background-color: #aa60ff;
-        color: #ffffff;
-    }
+.download-movie-torrent ul {
+    display: flex;
+}
 
-    .download-movie-torrent ul {
-        list-style: none;
-        display: flex;
-    }
+.download-movie-torrent img {
+    width: 20%;
+}
 
-    .download-movie-torrent img{
-        width: 40px;
-    }
+.mediafire {
+    padding: 5px 20px;
+    background: #003e4e;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    transition: .3s;
+}
 
-    .download-movie-torrent span {
-        font-weight: bold;
-        font-size: 15px;
-    }
-.download-movie-torrent span {
-    font-weight: bold;
-    font-size: 15px;
+.mediafire:hover {
+    background: #da4040;
+    opacity: .9;
+}
+
+.mediafire p {
+    font-size: 20px;
+
+}
+
+.mediafire span {
+    font-weight: bolder;
+}
+
+.season-download {
+    justify-content: space-between;    
+}
+
+.season-download ul {
+    padding: 10px 0;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: auto;
+}
+
+.season-download ul a li p {
+    font-size:  18px;
+    font-weight: 600;
+}
+
+.season-download li {
+    margin: 8px;
+    padding: 8px;
+    background: #003e4e;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s;
+}
+
+.season-download li:hover{
+background: #da4040;
+opacity: .9;
+}
+
+.season-download ul a li p.size-season {
+    font-weight: 100;
 }
