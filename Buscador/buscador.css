@@ -16,16 +16,15 @@ a {
     text-decoration: none;
     color: #fff;
 }
-
 .nav-middle .search-box {
-margin: auto;
-width: 40%;
-left: 30%;
-border: 1px solid #333;
-padding: 8px 12px;
-border-radius: 25px;
-position: fixed;
-background: transparent;
+    margin: auto;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid #333;
+    padding: 8px 12px;
+    border-radius: 25px;
+    position: fixed;
+    background: transparent;
 }
 
 .nav-middle .search-box input {
@@ -41,8 +40,8 @@ background: transparent;
     z-index: 11;
     position: fixed;
     top: 36px;
-    width: 40%;
-    left: 30%;
+    width: 50%;
+    left: 25%;
     color: #fff;
     height: 114px;
     overflow: auto;
@@ -74,11 +73,3 @@ background: transparent;
     background: #242424;
 }
 
-@media (max-width: 375px) {
-    .nav-middle .search-box input {
-        font-size: 10px;
-    }
-    #list {
-        font-size: 10px;
-    }
-}
