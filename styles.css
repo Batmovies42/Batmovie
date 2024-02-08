@@ -965,7 +965,7 @@
     .mobile-nav div img {
     justify-content: center;}
 
-    @media (max-width: 1170px) {
+    @media (max-width: 1024px) {
         body {
             overflow-x: hidden;
         }
@@ -1174,6 +1174,15 @@
         padding-top: 40px;
         padding-bottom: 20px;
     }
+    .buscador-iframe iframe {
+        width: 90%;
+        margin: auto;
+        position: fixed;
+        z-index: 11;
+        top: 8%;
+        left: 10%;
+        height: 97px;
+    }
     }
     @media (max-width: 900px){
 
@@ -1326,23 +1335,20 @@
             width: 100%;
         }
     }
-    
+   
     @media (max-width: 425px) {
         body {
             overflow-x: hidden;
         }
-        .contenedor .vid-list .thumbnail {
-            width: 80px;
-            height: 238px;
-            object-fit: fill;
-            border-radius: 5px;
+        .bars{
+            display: none;
         }
-
-
+        .sidebar {
+            display: none;
+        }
         .div-filter-buttos {
             width: 100%;
         }
-        
         .div-filter-buttos button {
             width: 25%;
             cursor: pointer;
@@ -1351,7 +1357,7 @@
             border-right: #000;
             color: #fff;
             background: #000;
-            font-size: 8px;
+            font-size: 10px;
             font-weight: bold;
             padding: 10px;
         }
@@ -1380,9 +1386,9 @@
         margin: auto;
     }
     .slide h3 {
-        font-size: 9px;
+        font-size: 12px;
         margin-left: 5%;
-        margin-top: 30%;
+        margin-top: 27.4%;
         position: absolute;
         background: transparent;
         color: #fff;
@@ -1390,14 +1396,14 @@
 
     }
     .slide p {
-        width: 80%;
+        width: 90%;
         padding: 5px;
         color: #cfcfcf;
         margin-left: 5%;
-        margin-top: 35%;
+        margin-top: 32%;
         position: absolute;
         background: #0000004f;
-        font-size: 8px;
+        font-size: 10px;
     }
     .arrow {
         background: transparent;
@@ -1416,10 +1422,10 @@
         .arrow-right {
         margin-right: 0px;
         
-        }   
+        }     
         .list-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
             grid-column-gap: 5px;
             grid-row-gap: 30px;
             margin-top: 15px;
@@ -1428,9 +1434,9 @@
         }
         .vid-info a{
             color: #fff;
-            font-weight: 600;
+            font-weight: 800;
             display: block;
-            font-size: 12px;
+            font-size: 1em;
         }
         .contenedor .vid-list img{
             width: 50%;
@@ -1454,6 +1460,7 @@
             font-weight: bold;
         
         }
+
         .row {
             padding-left: 0%;
         }
@@ -1520,26 +1527,30 @@
         background: transparent;
         font-size: 10px;
     }
-    .B-info {
-        font-size: 140px;
     }
-    }
+    
     @media (max-width: 375px) {
         body {
             overflow-x: hidden;
         }
+        .buscador-iframe iframe {
+            width: 90%;
+            margin: auto;
+            position: fixed;
+            z-index: 11;
+            top: 60px;
+            left: 10%;
+            height: 97px;
+        }
         .contenedor .vid-list .thumbnail {
-            width: 134px;
-            height: 238px;
+            width: 448px;
+            height: 635px;
             object-fit: fill;
             border-radius: 5px;
         }
-
-
         .div-filter-buttos {
             width: 100%;
         }
-        
         .div-filter-buttos button {
             width: 25%;
             cursor: pointer;
@@ -1548,7 +1559,7 @@
             border-right: #000;
             color: #fff;
             background: #000;
-            font-size: 8px;
+            font-size: 10px;
             font-weight: bold;
             padding: 10px;
         }
@@ -1616,8 +1627,8 @@
         }   
         .list-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            grid-column-gap: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(162px, 2fr));
+            grid-column-gap: 15px;
             grid-row-gap: 30px;
             margin-top: 15px;
             background: #000;
@@ -1717,11 +1728,208 @@
         background: transparent;
         font-size: 10px;
     }
-    .B-info {
-        font-size: 14px;
+
     }
+    @media (max-width: 320px) {
+        
+        body {
+            overflow-x: hidden;
+        }
+        .buscador-iframe iframe {
+            width: 90%;
+            margin: auto;
+            position: fixed;
+            z-index: 11;
+            top: 10%;
+            left: 10%;
+            height: 97px;
+        }
+        .bars{
+            display: none;
+        }
+        .sidebar {
+            display: none;
+        }
+        .div-filter-buttos {
+            width: 100%;
+        }
+        .div-filter-buttos button {
+            width: 25%;
+            cursor: pointer;
+            border-top: #000;
+            border-left: #000;
+            border-right: #000;
+            color: #fff;
+            background: #000;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .logo {
+            width: 32px;
+            height: 32px;
+
+        }
+        .buscador-iframe iframe {
+         width: 80%;
+        margin: auto;
+        position: fixed;
+        z-index: 11;
+        top: 1.5%;
+        left: 10%;
+        height: 100px;
     }
-  
+    .slider {
+        width: 100%;
+        height: 160px;
+        overflow: hidden;
+        position: relative;
+    }
+    .slider img {
+        width: 100%;
+        margin: auto;
+    }
+    .slide h3 {
+        font-size: 9px;
+        margin-left: 5%;
+        margin-top: 30%;
+        position: absolute;
+        background: transparent;
+        color: #fff;
+        background: #00000085;
+
+    }
+    .slide p {
+        width: 80%;
+        padding: 5px;
+        color: #cfcfcf;
+        margin-left: 5%;
+        margin-top: 35%;
+        position: absolute;
+        background: #0000004f;
+        font-size: 8px;
+    }
+    .arrow {
+        background: transparent;
+        width: 35px;
+        height: 50px;
+        position: absolute;
+        top: 160px;
+        font-size: 1em;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 200px;
+        }   
+        .arrow-left {
+        margin-left: 0px;
+        }
+        .arrow-right {
+        margin-right: 0px;
+        
+        }   
+        .list-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+            grid-column-gap: 5px;
+            grid-row-gap: 30px;
+            margin-top: 15px;
+            background: #000;
+
+        }
+        .vid-info a{
+            color: #fff;
+            font-weight: 600;
+            display: block;
+            font-size: 11px;
+        }
+        .contenedor .vid-list img{
+            width: 50%;
+            height: 271px;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .mobile-nav {
+            padding: 20px 0;
+            width: 100%;
+        }
+        .mobile-nav div{
+            display: flex;
+            justify-content: space-between;
+        } 
+        
+        .mobile-nav div a {
+            align-items: center;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .row {
+            padding-left: 0%;
+        }
+        .play-video iframe {
+            width: 100%;
+        }
+        
+        .sinopsis h3 {
+            font-size: 8px;
+        }
+
+        .sinopsis b {
+            font-size: 5px;
+        }
+
+        .sinopsis {
+            width: 70%;
+            background: transparent;
+            font-size: 8px;
+            margin: 0;
+            height: 70px;
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        .traileri {
+        display: none;
+        }
+        .option-active {
+            border-bottom: 2px solid #2b06ff   
+        }
+        .option {
+            flex-grow: 1;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .content {
+            font-size: 12px;
+            width: 80%;
+            height: 100%;
+            color: #fff;
+            padding: 0px;
+    margin: auto;    }
+        
+    .manage-episodes {
+        width: 100%;
+        font-size: 8px;
+        margin: auto;
+        text-align: center;
+        justify-content: s;
+    }
+
+    .sinopsis-episode, p{
+        background: transparent;
+        font-size: 9px;
+    }
+
+    .sinopsis b{
+        background: transparent;
+        font-size: 10px;
+    }
+
+   
+    }
     
 
 
