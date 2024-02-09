@@ -965,9 +965,11 @@
     .mobile-nav div img {
     justify-content: center;}
 
-    @media (max-width: 900px){
+    @media (max-width: 1080px){
 
-
+        .bars {
+            display: none;
+        }
         .container, .large-container{
             padding-left: 5%;
             padding-right: 5%;
@@ -983,9 +985,7 @@
         .logo{
             width: 65px;
         }
-        .bars{
-            display: flex;
-        }
+       
         .sidebar {
             display: none;
         }
