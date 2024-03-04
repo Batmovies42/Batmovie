@@ -193,9 +193,9 @@
 
     .contenedor .vid-list .thumbnail{
         width: 100%;
-        height: 271px;
+        height: 280px;
         border-radius: 5px;
-        object-fit: cover;
+        object-fit: fill;
     }
     .contenedor .vid-list .flex-div {
         align-items: flex-start;
